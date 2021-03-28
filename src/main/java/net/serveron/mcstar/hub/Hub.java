@@ -7,13 +7,10 @@ public final class Hub extends Plugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-        getLogger().info("Hane's HubPlugin");
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new HubCommand(this));
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
     }
 }

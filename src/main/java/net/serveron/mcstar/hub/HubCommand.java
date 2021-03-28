@@ -6,7 +6,7 @@ import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Command;
 
 public class HubCommand extends Command {
-    private Hub hubPlugin;
+    private final Hub hubPlugin;
 
     public HubCommand(Hub hubPlugin) {
         super("hub");
